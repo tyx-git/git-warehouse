@@ -1,0 +1,20 @@
+common:
+  pattern: '%h %l %u %t "%r" %>s %b "%{Referer}i" "%{User-Agent}i"'
+  fields:
+    - name: "remote_addr"
+      type: "string"
+    - name: "remote_user"
+      type: "string"
+    - name: "time_local"
+      type: "datetime"
+      format: "%d/%b/%Y:%H:%M:%S %z"
+    - name: "request"
+      type: "string"
+    - name: "status"
+      type: "integer"
+    - name: "body_bytes_sent"
+      type: "integer"
+    - name: "http_referer"
+      type: "string"
+    - name: "http_user_agent"
+      type: "string"
