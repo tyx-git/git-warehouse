@@ -1,9 +1,0 @@
-mysql:
-  host: "localhost"
-  port: 3306
-  user: "root"
-  password: "root"
-  database: "web_log_analysis"
-  pool_size: 5
-  pool_recycle: 3600
-  charset: "utf8mb4"
